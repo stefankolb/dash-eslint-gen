@@ -1,0 +1,13 @@
+diff --git a/src/styles/lib/bootstrap_variables.less b/src/styles/lib/bootstrap_variables.less
+index c3a035ecf7251650ec268d3fa247a9a0ce900c94..9e94d6fbff816aa2c5ab385fa5a7a9cf1935929f 100644
+--- a/src/styles/lib/bootstrap_variables.less
++++ b/src/styles/lib/bootstrap_variables.less
+@@ -72,7 +72,7 @@
+ // Iconography
+ // -------------------------
+ 
+-@icon-font-path:          "../fonts/";
++@font-path:               "../fonts/";
+ @icon-font-name:          "glyphicons-halflings-regular";
+ 
+ 

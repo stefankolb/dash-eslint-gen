@@ -1,0 +1,8 @@
+# OS specific
+
+# Node/Yarn stuff
+node_modules
+yarn-*.log
+
+# Project specific
+build

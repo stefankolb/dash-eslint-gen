@@ -1,0 +1,42 @@
+diff --git a/.eleventy.js b/.eleventy.js
+index 09798d5b08bf203524117eb38fb7a0308a07b5cb..c7ec62851446c9d5d4c6751eda657db8695b5558 100644
+--- a/.eleventy.js
++++ b/.eleventy.js
+@@ -1,5 +1,6 @@
+ "use strict";
+ 
++const path = require('path');
+ const { addPlugins, addFilters, addTransforms } = require("./_11ty");
+ const yaml = require("js-yaml");
+ 
+@@ -8,16 +9,27 @@ module.exports = function(eleventyConfig) {
+     addFilters(eleventyConfig);
+     addTransforms(eleventyConfig);
+ 
++    eleventyConfig.addFilter(
++      "relativePath",
++      (page, root = "/") => {
++        if (page.url.endsWith('/')) {
++          page.url += 'index.html'
++        }
++
++        return `${path.relative(path.dirname(page.url), root)}/`
++      }
++    );
++
+     // Add YAML files as data sources
+     eleventyConfig.addDataExtension("yml", contents => yaml.safeLoad(contents));
+ 
+     // Add collection of blog posts.
+-    eleventyConfig.addCollection("posts", collection => collection.getFilteredByGlob("_posts/*.md").reverse());
++    // eleventyConfig.addCollection("posts", collection => collection.getFilteredByGlob("_posts/*.md").reverse());
+ 
+     // Copy over static assets.
+     eleventyConfig.addPassthroughCopy("assets");
+-    eleventyConfig.addPassthroughCopy({ "public/*": "." });
+-    eleventyConfig.addPassthroughCopy("docs/**/*.svg");
++    // eleventyConfig.addPassthroughCopy({ "public/*": "." });
++    eleventyConfig.addPassthroughCopy("docs/?(developer-guide|maintainer-guide|rules|user-guide)/**/*.svg");
+ 
+     return {
+         dir: {

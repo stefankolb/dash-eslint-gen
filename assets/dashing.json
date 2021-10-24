@@ -1,0 +1,19 @@
+{
+  "name": "ESLint",
+  "package": "ESLint",
+  "index": "index.html",
+  "selectors": {
+    "head title": {
+      "type": "Word",
+      "matchpath": "docs/rules/.*\\.html",
+      "regexp": " -.*",
+      "replacement": ""
+    },
+    "main article h1": {
+      "type": "Guide",
+      "matchpath": "docs/?(developer-guide|maintainer-guide|user-guide)/.*\\.html"
+    }
+  },
+  "allowJS": true,
+  "ExternalURL": "https://www.eslint.org"
+}

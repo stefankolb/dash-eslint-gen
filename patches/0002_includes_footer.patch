@@ -1,0 +1,12 @@
+diff --git a/_includes/footer.liquid b/_includes/footer.liquid
+index 8d22786696e204c8bceea20a2aed2bbbfec47264..8d405fe3de7a05926a7b54458807831834baafe2 100644
+--- a/_includes/footer.liquid
++++ b/_includes/footer.liquid
+@@ -19,5 +19,5 @@
+     </ul>
+   </footer>
+ </div>
+-<script src="/assets/js/main.js"></script>    
+-<script src="https://kit.fontawesome.com/6ebce1c175.js" crossorigin="anonymous"></script>
++<script src="{{ page | relativePath }}assets/js/main.js"></script>
++<!-- <script src="https://kit.fontawesome.com/6ebce1c175.js" crossorigin="anonymous"></script> -->

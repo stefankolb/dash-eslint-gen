@@ -1,0 +1,15 @@
+diff --git a/_includes/text-ad.liquid b/_includes/text-ad.liquid
+index e8df71ffd6dcd166bf89d3ad539425cfeedd544e..824fe49ba269ffce72ff4870a5277a592430339f 100644
+--- a/_includes/text-ad.liquid
++++ b/_includes/text-ad.liquid
+@@ -1,8 +1,8 @@
+ <!-- Ethical Ads -->
+-<div class="bordered" data-ea-publisher="eslint-org" data-ea-type="text">
++<!-- <div class="bordered" data-ea-publisher="eslint-org" data-ea-type="text">
+     <div class="eslint-ad">
+         <div class="eslint-ad-content">
+             <a href="https://opencollective.com/eslint" rel="nofollow" target="_blank"><strong>Sponsor ESLint.</strong> ESLint depends on donations for ongoing maintenance and development.</a>
+         </div>
+     </div>
+-</div>
++</div> -->

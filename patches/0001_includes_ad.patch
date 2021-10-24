@@ -1,0 +1,16 @@
+diff --git a/_includes/ad.liquid b/_includes/ad.liquid
+index 131b364be39f0ecf3cb3ab2c311492f5928e9b47..769a73736c5e6ddc659f97bde69b7e871355a175 100644
+--- a/_includes/ad.liquid
++++ b/_includes/ad.liquid
+@@ -1,4 +1,4 @@
+-<script id="eslint-sponsor">
++<!-- <script id="eslint-sponsor">
+   if(window.innerWidth > 800) {
+     var s = document.createElement("script");
+     s.type = "text/javascript";
+@@ -7,4 +7,4 @@
+     document.getElementById("eslint-sponsor").after(s);
+     document.getElementById("eslint-sponsor").remove();
+   }
+-</script>
++</script> -->

@@ -1,0 +1,19 @@
+{
+  "name": "dash-eslint-gen",
+  "version": "1.0.0",
+  "description": "Dash docset generator for ESLint",
+  "main": "index.js",
+  "repository": "git@github.com:stefankolb/dash-eslint-gen.git",
+  "author": "Stefan Kolb <dev@stefankolb.de>",
+  "license": "SEE LICENSE IN LICENSE",
+  "private": true,
+  "devDependencies": {
+    "dashing": "0.4.8",
+    "node-html-parser": "5.0.0",
+    "shelljs": "0.8.4",
+    "tasuku": "1.0.2"
+  },
+  "scripts": {
+    "build:docset": "node index.js"
+  }
+}
