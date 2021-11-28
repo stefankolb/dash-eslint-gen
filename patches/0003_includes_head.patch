@@ -1,5 +1,5 @@
 diff --git a/_includes/head.liquid b/_includes/head.liquid
-index c90b3f2db44a616b294011a109949e2ba3a955cf..c0e33c144d317b9458b6b2e10818b2df98fe7354 100644
+index 37b808e9d0b5edc0b5bb7ed3e1ade24bc3443f4d..4e5c6781d55fe9b44fd683b9d29fafd59432cb13 100644
 --- a/_includes/head.liquid
 +++ b/_includes/head.liquid
 @@ -5,7 +5,7 @@
@@ -20,12 +20,19 @@ index c90b3f2db44a616b294011a109949e2ba3a955cf..c0e33c144d317b9458b6b2e10818b2df
    {% if title != site.title %}
        {% if title != "ESLint" %}
            <title>{{ title }} - {{ site.title }}</title>
-@@ -25,13 +25,13 @@
+@@ -25,17 +25,17 @@
    {% else %}
      <title>{{ site.title }}</title>
    {% endif %}
 -  <link rel="preconnect" href="https://www.google-analytics.com">
--  <link rel="canonical" href="{{ page.url | replace: '.html', '' }}">
+-  {% if original %} 
++  <!-- <link rel="preconnect" href="https://www.google-analytics.com"> -->
++  <!-- {% if original %}
+     <link rel="canonical" href="{{ original.url }}">
+-  {% else %}  
++  {% else %}
+     <link rel="canonical" href="{{ page.url | replace: '.html', '' }}">
+-  {% endif %}  
 -  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600">
 -  <link rel="stylesheet" href="/assets/styles/main.css">
 -  <link rel='manifest' href='/manifest.json'>
@@ -33,8 +40,7 @@ index c90b3f2db44a616b294011a109949e2ba3a955cf..c0e33c144d317b9458b6b2e10818b2df
 -  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed.xml">
 -  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
 -  <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
-+  <!-- <link rel="preconnect" href="https://www.google-analytics.com"> -->
-+  <!-- <link rel="canonical" href="{{ page.url | replace: '.html', '' }}"> -->
++  {% endif %} -->
 +  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600"> -->
 +  <link rel="stylesheet" href="{{ page | relativePath }}assets/styles/main.css">
 +  <!-- <link rel='manifest' href='/manifest.json'> -->
