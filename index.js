@@ -106,7 +106,8 @@ const transformLink = href => {
   // Let's create a relative path for the link based on the current directory
   if (parts.root !== '') {
     const relativePath = path.relative(parts.root, path.dirname(href));
-    href = `${relativePath}/${parts.base}`;
+    const endsWithSlash = href.endsWith('/') ? '/' : '';
+    href = `${relativePath}/${parts.base}${endsWithSlash}`;
   }
 
   // Let's find out if the reference is pointing to a directory
