@@ -1,0 +1,10 @@
+diff --git a/_pages/demo.liquid b/_pages/demo.liquid
+index fdb8c3ad55b4ac53736f625b42866c4f415e2263..8671d0dff9b66d24737ea561f29119e2415f347d 100644
+--- a/_pages/demo.liquid
++++ b/_pages/demo.liquid
+@@ -8,4 +8,4 @@ layout: demo
+         Loading...
+     </div>
+ </div>
+-<script src="/assets/js/demo.js"></script>
++<script src="{{ page | relativePath }}assets/js/demo.js"></script>

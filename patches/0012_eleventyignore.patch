@@ -1,8 +1,8 @@
 diff --git a/.eleventyignore b/.eleventyignore
-index c6ececca860091e0c6e31670f4b3f6efe7db7081..fb013cf5d167cc6f256782690c343d63a4472d80 100644
+index c6ececca860091e0c6e31670f4b3f6efe7db7081..157b6ecb806e05132e9e5cc7261caf29377aa89b 100644
 --- a/.eleventyignore
 +++ b/.eleventyignore
-@@ -5,3 +5,25 @@ package-lock.json
+@@ -5,3 +5,24 @@ package-lock.json
  package.json
  README.md
  webpack.config.js
@@ -11,7 +11,6 @@ index c6ececca860091e0c6e31670f4b3f6efe7db7081..fb013cf5d167cc6f256782690c343d63
 +_pages/404*
 +_pages/blog*
 +_pages/cla*
-+_pages/demo*
 +_pages/feed*
 +_pages/team*
 +_pages/users*

@@ -1,5 +1,5 @@
 diff --git a/_pages/index.liquid b/_pages/index.liquid
-index 45a8b42602fcc9f686c6ed7e0d7cd888a2cb9eb9..d67de52a21aad578ff282ca6146c8e3be43ae392 100644
+index 09902aa3..2a266941 100644
 --- a/_pages/index.liquid
 +++ b/_pages/index.liquid
 @@ -20,7 +20,7 @@ homepage: true
@@ -7,11 +7,11 @@ index 45a8b42602fcc9f686c6ed7e0d7cd888a2cb9eb9..d67de52a21aad578ff282ca6146c8e3b
  </div>
  
 -<hr class="hr-near-below">
-+<!-- <hr class="hr-near-below">
- {% assign tiers = "platinum,gold,silver,bronze,backers" | split: "," %}
- {% assign monthlyTotal = 0 %}
- {% assign supportersCount = 0 %}
-@@ -70,7 +70,7 @@ homepage: true
++<!--hr class="hr-near-below">
+ 
+ <div class="sponsors row">
+   <div class="col-sm-12">
+@@ -58,7 +58,7 @@ homepage: true
      </div>
      <p class="sponsor-btn text-center"><a class="btn btn-default" href="https://opencollective.com/eslint">Become a Sponsor today!</a></p>
    </div>

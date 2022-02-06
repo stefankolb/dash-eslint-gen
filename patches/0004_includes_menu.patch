@@ -1,5 +1,5 @@
 diff --git a/_includes/menu.liquid b/_includes/menu.liquid
-index 1d1229f54447261d4f00e5f0623a89486d58d84e..f22a93fd854603313280b1cb241ebcd46abcc041 100644
+index 1d1229f54447261d4f00e5f0623a89486d58d84e..0161d901f7f8b4991c98b9c8b816190571e6d673 100644
 --- a/_includes/menu.liquid
 +++ b/_includes/menu.liquid
 @@ -1,4 +1,4 @@
@@ -98,10 +98,9 @@ index 1d1229f54447261d4f00e5f0623a89486d58d84e..f22a93fd854603313280b1cb241ebcd4
            </ul>
          </li>
 -        <li><a href="/blog">Blog</a></li>
--        <li><a href="/demo">Demo</a></li>
--        <li class="dropdown">
 +        <!-- <li><a href="/blog">Blog</a></li> -->
-+        <!-- <li><a href="/demo">Demo</a></li> -->
+         <li><a href="/demo">Demo</a></li>
+-        <li class="dropdown">
 +        <!-- <li class="dropdown">
            <a href="/docs/about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About<span
                class="caret"></span></a>
